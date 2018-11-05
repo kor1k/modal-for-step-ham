@@ -1,33 +1,34 @@
-.main_view_buttons {
-    padding-top: 111px;
-    padding-right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+    text-decoration: none;
+    list-style: none;
 }
 
 #puchaseBtn {
+    cursor: pointer;
     width: 166px;
     height: 61px;
     border-radius: 4px;
     background-color: #00cbf6;
     color: #ffffff;
-    font-size: 13px; /* Приближение из-за подстановки шрифтов */
+    font-size: 13px;
     font-weight: 700;
-    line-height: 31px; /* Приближение из-за подстановки шрифтов */
+    line-height: 31px;
     text-align: center;
-    /*transform: scaleX(1.001);*/
 }
 
 .close {
+    cursor: pointer;
     float: right;
-    color: #aaa;
-    font-size: 20px;
+    color: #000;
+    font-size: 40px;
     font-weight: bold;
 }
 
+
 .modal {
-    display: none;
+    /*display: none;*/
+    display: flex;
+    justify-content: center;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -35,13 +36,14 @@
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
     border-radius: 30px;
-    height: 70%;
-    background-color: #fefefe;
+    /*height: 70%;*/
+    height: 367px;
+    background-color: #ffffff;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -49,101 +51,134 @@
     width: 840px;
 }
 
-.close {
-    float: right;
-    color: #aaa;
-    font-size: 20px;
-    font-weight: bold;
-}
+.modal-title {
+    display: flex;
+    justify-content: space-around;
 
-/*EBUCHAYA MODALKA*//*EBUCHAYA MODALKA*//*EBUCHAYA MODALKA*//*EBUCHAYA MODALKA*/
-
-.order_your_theme {
-    display: inline-block;
     font-family: Montserrat, sans-serif;
     color: #474646;
-    font-size: 26px; /* Приближение из-за подстановки шрифтов */
+    font-size: 22px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
     line-height: 30px; /* Приближение из-за подстановки шрифтов */
     text-align: left;
-    font-weight: 600;
-    margin-bottom: 1rem;
 }
 
-.modal_inputs, .order_now_button {
+.modal-title-right {
+    font-family: Montserrat, sans-serif;
+    color: #18cfab;
+    font-size: 21px; /* Приближение из-за подстановки шрифтов */
+    font-weight: 400;
+    line-height: 24px; /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+
+
+.facebook-button-test {
+    cursor: pointer;
+    margin-top: 17px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-direction: row;*/
+    width: 300px;
+    height: 51px;
+    font-size: 21px;
+    color: white;
+    background-color: #385999;
+}
+.modal-input-1, .modal-input-2, .modal-input-3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-input-2 {
+    margin-top: 10px;
+}
+
+.twitter-button-test {
+    cursor: pointer;
+    margin-top: 17px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    height: 51px;
+    font-size: 21px;
+    color: white;
+    background-color: #43b2e4;
+    margin-right: 23px;
+}
+
+.google-plus-button-test {
+    margin-top: 17px;
     cursor: pointer;
     display: flex;
-    flex-direction: column;
-    width: 340px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 300px;
+    height: 51px;
+    font-size: 21px;
+    color: white;
+    margin-right: 23px;
+    background-color: #df4b31;
 }
 
-.input1 {
-    margin-bottom: 19px;
-    /*background: url(../images/layer_input_1.png) no-repeat 310px 1px;*/
-    height: 32px;
-    background-size: auto 90%;
+
+
+.input-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 22px;
+    padding-left: 20px;
+    width: 319px;
+    height: 40px;
+    color: #888888;
 }
 
-.input2 {
-    /*background: url(../images/layer_input_2.png) no-repeat 310px 1px;*/
-    height: 32px;
-    background-size: auto 90%;
+.input-2 {
+    margin-top: 22px;
+    padding-left: 20px;
+    width: 319px;
+    height: 40px;
+    color: #888888;
 }
 
-.order_now_button {
+.modal-button {
+    border-radius: 5px;
+    cursor: pointer;
     margin-top: 20px;
-    background-color: #18cfab;
-}
-
-.order_now_textInButton {
+    width: 335px;
+    height: 40px;
+    font-family: Montserrat, sans-serif;
     color: #ffffff;
-    font-size: 21px; /* Приближение из-за подстановки шрифтов */
-    /*font-weight: 400;*/
-    /*line-height: 30px;!* Приближение из-за подстановки шрифтов *!*/
-    /*text-align: center;*/
-    width: 330px;
-    /*height: 50px;*/
-}
-
-.checkbox_remember {
-    cursor: pointer;
-    color: #b6b6b6;
-    font-size: 15px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    line-height: 30px; /* Приближение из-за подстановки шрифтов */
-    text-align: left;
-}
-
-.checkbox_forgot {
-    cursor: pointer;
-    color: #b6b6b6;
-    font-size: 15px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    line-height: 30px; /* Приближение из-за подстановки шрифтов */
-    text-align: left;
-}
-
-.checkbox_forgot, .checkbox_remember {
-    display: inline-block;
-    margin: 20px;
-}
-
-#puchaseBtn {
-    width: 166px;
-    height: 61px;
-    border-radius: 4px;
-    background-color: #00cbf6;
-    color: #ffffff;
-    font-size: 13px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 700;
-    line-height: 31px; /* Приближение из-за подстановки шрифтов */
+    font-size: 20px;
+    align-items: center;
+    line-height: 30px;
     text-align: center;
-    /*transform: scaleX(1.001);*/
+    background-color: rgb(24, 207, 171);
+}
+
+.checkboxes {
+    margin-top: 22px;
+    width: 330px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkbox-1 {
+    color: #888888;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
 }
 
 .loginBtn {
     box-sizing: border-box;
     position: relative;
-    /* width: 13em;  - apply for fixed size */
     margin: 0.2em;
     padding: 0 15px 0 46px;
     border: none;
@@ -208,27 +243,66 @@
     background: #E74B37;
 }
 
-.sign_buttons {
-    display: flex;
-    justify-content: right;
-    align-items: center;
+
+
+.check {
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 10px;
+    height: 10px;
 }
 
-.subscribe_and_get {
+.check + label {
     cursor: pointer;
-    display: flex;
-    justify-content: right;
-    /*align-items: rightgall;*/
-    color: #18cfab;
-    font-size: 21px; /* Приближение из-за подстановки шрифтов */
-    font-weight: 400;
-    line-height: 24px; /* Приближение из-за подстановки шрифтов */
-    text-align: right;
-    padding-right: 42px;
 }
-.modal_inputs, .order_now_button {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    width: 340px;
+
+.check:not(checked) {
+    position: absolute;
+    opacity: 0;
+}
+
+.check:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 60px;
+}
+
+.check:not(checked) + label:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    background: #CDD1DA;
+    box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+    -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, .2);
+}
+
+.check:not(checked) + label:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    transition: all .2s;
+}
+
+.check:checked + label:before {
+    background: #18CFAB;
+}
+
+.check:checked + label:after {
+    left: 20px;
+}
+
+.green-line {
+    
 }
