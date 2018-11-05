@@ -73,6 +73,7 @@
 }
 
 .facebook-button-test {
+    font-family: Montserrat,sans-serif;
     cursor: pointer;
     margin-top: 17px;
     text-align: center;
@@ -97,6 +98,7 @@
 }
 
 .twitter-button-test {
+    font-family: Montserrat,sans-serif;
     cursor: pointer;
     margin-top: 17px;
     display: flex;
@@ -111,6 +113,7 @@
 }
 
 .google-plus-button-test {
+    font-family: Montserrat,sans-serif;
     margin-top: 17px;
     cursor: pointer;
     display: flex;
@@ -146,6 +149,7 @@
 }
 
 .modal-button {
+
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
@@ -324,5 +328,9 @@
     left: 880px;
     bottom: 370px;
     background-color: #18cfab;
+}
+
+.fab {
+    padding-right: 67px;
 }
 
