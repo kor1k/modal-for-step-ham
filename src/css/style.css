@@ -163,6 +163,7 @@
 .checkboxes {
     margin-top: 22px;
     width: 330px;
+    margin-left: 36px;
     display: flex;
     justify-content: space-between;
 }
@@ -303,14 +304,14 @@
     width: 1px;
     height: 70px;
     left: 880px;
-    bottom: 110px;
+    bottom: 480px;
     background-color: #18cfab;
 }
 
 .text-between-lines {
     position: absolute;
     left: 874px;
-    bottom: 77px;
+    bottom: 450px;
     font-family: Montserrat, sans-serif;
     color: #919191;
     font-size: 14px
@@ -321,7 +322,7 @@
     width: 1px;
     height: 70px;
     left: 880px;
-    bottom: -15px;
+    bottom: 370px;
     background-color: #18cfab;
 }
 
