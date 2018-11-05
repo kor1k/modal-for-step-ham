@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MODAL THE HAM</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="main_view_buttons">
+    <a href="#">
+        <button class="main_view_btn1">EXPLORE NOW</button>
+    </a>
+    <button id="puchaseBtn">PURCHASE NOW</button>
+
+<!--//TODO: remade it df jjc fdcolumn-->
+    <div id="myModal" class="container modal">
+        <div class="container modal-content">
+            <span class="close">&times;</span>
+            <div class="order_your_theme">Order your theme now!</div>
+            <div class="modal_inputs">
+                <input class="input1" type="text" placeholder="Your mail*">
+                <input class="input2" type="text" placeholder="Your password*">
+            </div>
+            <div class="subscribe_and_get">Subscribe and get more options!</div>
+            <div class="sign_buttons">
+                <a href="https://www.facebook.com/">
+                    <button class="loginBtn loginBtn--facebook">
+                        Login with Facebook
+                    </button>
+                </a>
+                <a href="https://plus.google.com/">
+                    <button class="loginBtn loginBtn--google">
+                        Login with Google
+                    </button>
+                </a>
+            </div>
+            <div class="order_now_button">
+                <div class="order_now_textInButton">Order Now</div>
+            </div>
+
+            <div class="checkbox_remember"><input type="checkbox"> Remember Me</div>
+            <div class="checkbox_forgot"> Forgot Password?</div>
+
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
